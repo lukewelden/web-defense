@@ -8,7 +8,7 @@ In this repo you'll see the definition and how to prevent the following common a
 
 You can also see some defensive coding in JavaScript. 
 
-## Cross-Site Request Forgery
+## Cross-Site Request Forgery (CSRF)
 - Cross-Site Request Forgery (CSRF) is a vulnerability that tricks a user into submitting a web request on behalf of an attacker. This is often done by crafting a URL embedded with a request and tricking an authenticated user into clicking it. Examlpes include:
 `http://bank.com/send?recipient=Stranger&amount=2000`
 `https://oursite.com/changepassword.php?new_password=[USER PASSWORD]`
@@ -34,3 +34,18 @@ SQL Injection is a vulnerability that allows an attacker to manipulate SQL queri
 #### Tools and technology
 - [Validator.js](https://www.npmjs.com/package/validator)
 - [express-validator](https://www.npmjs.com/package/validator)
+
+## Cross-Site Scripting (XSS)
+Cross-Site Scripting (XSS) is a vulnerability where unsanitized input is rendered on the front end, allowing an attacker to inject malicious code (usually JavaScript) that can steal user data, redirect users to malicious pages, or take control of their browser.
+
+### Attack methods
+- Stored XSS: Occurs when a web server stores unsanitized user input and displays it to other users, allowing an attacker to inject and store a malicious script on the website.
+- Reflected XSS: Occurs when a user's input is immediately returned back to them without being stored on the server, allowing attackers to target specific users with a malicious script.
+- DOM-Based XSS: Occurs when user input is interpreted by the DOM, allowing an attacker to inject malicious code that operates on the client-side.
+
+### Prevention 
+As with SQL Injection the main protection against XSS is Data Sanitization. 
+
+#### Tools and technology
+- [sanitize-html](https://www.npmjs.com/package/sanitize-html)
+- [helmet](https://www.npmjs.com/package/helmet)
