@@ -67,3 +67,14 @@ A lint, or linter, is a static code analysis tool used to evaluate and improve s
 eslint-plugin-security is a plugin for ESlint that adds rules to detect several security vulnerabilities including unsafe regular expressions, non-literal exec(), eval() used with an expression, and more!
 ### Dangers and Alternatives of exec
 The exec() method can lead to a vulnerability where user input can run as a shell command. The danger is that unrestricted commands can access, modify, and delete files. The execFile() method is an alternative that works similarly to exec() but requires the separation of the commands and their arguments.
+
+## Remediation and Incident Response 
+- Incident: the term _incident_ is when something bad happens, like a breach or policy violation, that harms or potentially harms the security of a system
+- Remediation: the process of fixing a security issue such as patching a vulnerability in a piece of software, removing malware from an infected computer, or kicking a malicious attacker out of a network
+- Incident Response: everything that needs to happen to investigate and recover from an incident. 
+- Incident Response Lifecycle 
+    1. Preparation 
+    2. Detection
+    3. Analysis and Investigation
+    4. Remediation
+    5. Review 
