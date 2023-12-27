@@ -1,0 +1,27 @@
+{
+  "name": "defensive-js-coding",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "This mini project has been created to demonstrate how write defensive javascript code. This project is part of the *Security, Infrastructure, and Scalability | Common Attacks on Web Applications* module from Codecademy's Backend Engineer Career Path.",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "startdev": "nodemon main.js",
+    "lint": "eslint main.js",
+    "lint-fix": "eslint --fix",
+    "lint-fix-all": "eslint --fix ."
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "eslint-plugin-security": "^1.4.0",
+    "nodemon": "^3.0.2"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "morgan": "^1.10.0",
+    "safe-eval": "^0.4.1",
+    "safe-regex": "^1.0.1"
+  }
+}
